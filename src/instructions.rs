@@ -386,8 +386,6 @@ pub fn op_and(
     }
 }
 
-use uint256::Uint256;
-
 pub fn op_or(
     pc: &mut u64,
     interpreter: &mut interpreter::EVMInterpreter,
@@ -763,8 +761,6 @@ pub fn op_call_data_copy(
 
     Ok(Vec::new())
 }
-
-use uint256::Uint256;
 
 pub fn op_return_data_size(
     pc: &mut u64,
