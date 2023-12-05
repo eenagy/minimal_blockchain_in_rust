@@ -288,6 +288,7 @@ fn deafult_instruction_set() -> JumpTable {
         min_stack: stack_table::min_stack(1, 1),
         max_stack: stack_table::max_stack(1, 1),
     });
+    // duplicate
     jump_table[OpCode: CODECOPY as usize] = Some(Operation {
         execute: instructions::op_code_copy,
         constant_gas: params.ExtcodeCopyBaseFrontier,
